@@ -1,0 +1,14 @@
+/home/lostshorecreative/Documents/BetterConsoleGame/bin/Debug/net8.0/BetterConsoleGame
+/home/lostshorecreative/Documents/BetterConsoleGame/bin/Debug/net8.0/BetterConsoleGame.deps.json
+/home/lostshorecreative/Documents/BetterConsoleGame/bin/Debug/net8.0/BetterConsoleGame.runtimeconfig.json
+/home/lostshorecreative/Documents/BetterConsoleGame/bin/Debug/net8.0/BetterConsoleGame.dll
+/home/lostshorecreative/Documents/BetterConsoleGame/bin/Debug/net8.0/BetterConsoleGame.pdb
+/home/lostshorecreative/Documents/BetterConsoleGame/obj/Debug/net8.0/BetterConsoleGame.GeneratedMSBuildEditorConfig.editorconfig
+/home/lostshorecreative/Documents/BetterConsoleGame/obj/Debug/net8.0/BetterConsoleGame.AssemblyInfoInputs.cache
+/home/lostshorecreative/Documents/BetterConsoleGame/obj/Debug/net8.0/BetterConsoleGame.AssemblyInfo.cs
+/home/lostshorecreative/Documents/BetterConsoleGame/obj/Debug/net8.0/BetterConsoleGame.csproj.CoreCompileInputs.cache
+/home/lostshorecreative/Documents/BetterConsoleGame/obj/Debug/net8.0/BetterConsoleGame.dll
+/home/lostshorecreative/Documents/BetterConsoleGame/obj/Debug/net8.0/refint/BetterConsoleGame.dll
+/home/lostshorecreative/Documents/BetterConsoleGame/obj/Debug/net8.0/BetterConsoleGame.pdb
+/home/lostshorecreative/Documents/BetterConsoleGame/obj/Debug/net8.0/BetterConsoleGame.genruntimeconfig.cache
+/home/lostshorecreative/Documents/BetterConsoleGame/obj/Debug/net8.0/ref/BetterConsoleGame.dll
