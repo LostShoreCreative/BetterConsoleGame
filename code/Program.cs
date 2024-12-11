@@ -8,8 +8,10 @@
     inputThread.Start();
     while(isRunning)
     {
+      Debug.Log("[Program]: Calling BuildScreen()", "Dump.txt");
       WindowManager.BuildScreen();
-      Thread.Sleep(33);
+      Debug.Log("[Program]: Screen built", "Dump.txt");
+      Thread.Sleep(30);
     }
   }
 
@@ -27,4 +29,8 @@
     isRunning = false;
   }
 
+  public static void ChangeBackEnd(BackEnd backEnd)
+  {
+    bk = backEnd;
+  }
 }

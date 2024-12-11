@@ -9,4 +9,6 @@ abstract class BackEnd
   }
   public abstract void HandleInput(ConsoleKeyInfo cki);
   protected abstract void HandleEnter();
+
+  protected abstract void MakeScreenData();
 }

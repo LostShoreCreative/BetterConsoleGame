@@ -4,11 +4,13 @@ class MainMenuBackEnd : BackEnd
   readonly string[] DATA = {"Continue", "New Game", "Load Game", "Quit"};
   ScreenData[] _screenData;
   int _selectedData;
+  bool _allowMakeScreenData;
 
   public MainMenuBackEnd()
   {
     _selectedData = 0;
     _screenData = new ScreenData[4];
+    _allowMakeScreenData = true;
     MakeScreenData();
   }
 
@@ -26,7 +28,7 @@ class MainMenuBackEnd : BackEnd
       HandleEnter();
       break;
     }
-    MakeScreenData();
+    if(_allowMakeScreenData) MakeScreenData();
   }
 
   protected override void HandleEnter()
@@ -36,8 +38,10 @@ class MainMenuBackEnd : BackEnd
       case 0:
       break;
       case 1:
-      break;
-      case 2:
+      Program.ChangeBackEnd(new NewCharacterBackEnd());
+      _allowMakeScreenData = false;
+      return;
+      case 2:;
       break;
       case 3:
       Program.Stop();
@@ -57,7 +61,7 @@ class MainMenuBackEnd : BackEnd
     else _selectedData++;
   }
 
-  private void MakeScreenData()
+  protected override void MakeScreenData()
   {
     int dataHeight = WindowManager.GetHeight()/2-2;
     for(int index = 0; index < _screenData.Length; index++)

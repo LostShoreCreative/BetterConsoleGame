@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/lostshorecreative/Documents/BetterConsoleGame/BetterConsoleGame.csproj": {}
+    "D:\\Code_Projects\\BetterConsoleGame\\BetterConsoleGame.csproj": {}
   },
   "projects": {
-    "/home/lostshorecreative/Documents/BetterConsoleGame/BetterConsoleGame.csproj": {
+    "D:\\Code_Projects\\BetterConsoleGame\\BetterConsoleGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/lostshorecreative/Documents/BetterConsoleGame/BetterConsoleGame.csproj",
+        "projectUniqueName": "D:\\Code_Projects\\BetterConsoleGame\\BetterConsoleGame.csproj",
         "projectName": "BetterConsoleGame",
-        "projectPath": "/home/lostshorecreative/Documents/BetterConsoleGame/BetterConsoleGame.csproj",
-        "packagesPath": "/home/lostshorecreative/.nuget/packages/",
-        "outputPath": "/home/lostshorecreative/Documents/BetterConsoleGame/obj/",
+        "projectPath": "D:\\Code_Projects\\BetterConsoleGame\\BetterConsoleGame.csproj",
+        "packagesPath": "C:\\Users\\LostShore\\.nuget\\packages\\",
+        "outputPath": "D:\\Code_Projects\\BetterConsoleGame\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/lostshorecreative/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\LostShore\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -53,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
