@@ -67,7 +67,7 @@ class MainMenuBackEnd : BackEnd
     for(int index = 0; index < _screenData.Length; index++)
     {
       string data = DATA[index];
-      if(index == _selectedData)
+        if(index == _selectedData)
       {
         _screenData[index] = new ScreenData($"|>{data}<|".ToCharArray(), dataHeight+index, WindowManager.CenterText(data+"1234"));
       }

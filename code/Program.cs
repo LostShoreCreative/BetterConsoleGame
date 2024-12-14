@@ -4,13 +4,15 @@
   static BackEnd bk = new MainMenuBackEnd();
   public static void Main(string[] args)
   {
+    AppDomain.CurrentDomain.FirstChanceException += (sender, eventArgs) =>
+    {
+	    Debug.Log(eventArgs.Exception.ToString(), "Errors.txt");
+    };
     Thread inputThread = new Thread(new ThreadStart(HandleInput));
     inputThread.Start();
     while(isRunning)
     {
-      Debug.Log("[Program]: Calling BuildScreen()", "Dump.txt");
       WindowManager.BuildScreen();
-      Debug.Log("[Program]: Screen built", "Dump.txt");
       Thread.Sleep(30);
     }
   }

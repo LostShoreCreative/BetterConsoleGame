@@ -8,6 +8,7 @@ class NewCharacterBackEnd : BackEnd
 
   int _selectedSkill = 0;
   int _skillPoints = 9;
+  bool _allowMakeScreenData = true;
 
   public NewCharacterBackEnd()
   {
@@ -34,7 +35,7 @@ class NewCharacterBackEnd : BackEnd
       HandleEnter();
       break;
     }
-    MakeScreenData();
+    if (_allowMakeScreenData) MakeScreenData();
   }
 
   private void HandleLeftArrow()
@@ -55,9 +56,9 @@ class NewCharacterBackEnd : BackEnd
 
   private int LowerSkillValue(int skill)
   {
-    if(skill == 0) return skill;
+    if(skill == 1) return skill;
     _skillPoints++;
-    return skill--;
+    return skill-1;
   }
 
   private void HandleRightArrow()
@@ -74,6 +75,8 @@ class NewCharacterBackEnd : BackEnd
       case 2:
       _constitution++;
       break;
+      default:
+      return;
     }
     _skillPoints--;
   }
@@ -92,7 +95,12 @@ class NewCharacterBackEnd : BackEnd
 
   protected override void HandleEnter()
   {
-    throw new NotImplementedException();
+    if(_selectedSkill == 3 && _skillPoints == 0)
+    {
+      Player.MakePlayer(_strenght, _dexterity, _constitution);
+      Program.ChangeBackEnd(new GameMenuBackEnd());
+      _allowMakeScreenData = false;
+    }
   }
 
   protected override void MakeScreenData()
@@ -101,9 +109,9 @@ class NewCharacterBackEnd : BackEnd
 
     for(int i = 0; i < _screenData.Length; i++)
     {
-      string text = "";
-      if( i != 4) text = $"<-{DATA[i]}{values[i]}->";
-      else text = DATA[i];
+      string text = DATA[i];
+      if(i != 4) text = $"{text}{values[i]}";
+      if(i != 0 && i != 4) text = $"<-{text}->";
       if(i-1 == _selectedSkill) text = $"**{text}";
       _screenData[i] = new ScreenData(text.ToCharArray(), WindowManager.GetHeight()/2-2+i, WindowManager.CenterText(text));
     }
