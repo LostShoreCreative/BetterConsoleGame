@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "OeycsmJgaUE=",
+  "dgSpecHash": "E6fjuDrNZ70=",
   "success": true,
-  "projectFilePath": "D:\\Code_Projects\\BetterConsoleGame\\BetterConsoleGame.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/LostShore/Projects/BetterConsoleGame/BetterConsoleGame.csproj",
+  "expectedPackageFiles": [
+    "/home/LostShore/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.12/microsoft.aspnetcore.app.ref.10.0.12.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,6 +1,6 @@
 class Player
 {
-	static Player character;
+	static Player? character;
 	int _strenght;
 	int _dexterity;
 	int _constitution;
@@ -18,7 +18,7 @@ class Player
 		_level = 1;
 
 		_health = 10 + 2*con*_level;
-		_damage = (int)1 + _strenght;
+		_damage = 1 + _strenght;
 		_armorClass = 1 + dex;
 	}
 
@@ -34,6 +34,6 @@ class Player
 
 	public static Player GetCharacter()
 	{
-		return character;
+		return character!;
 	}
 }
